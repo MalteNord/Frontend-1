@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka tid</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main>
+<section class="hidden">
+    <h1>Gaddsnirm</h1>
+    <p>
+        Här kan du skicka en förfrågan om en tid. Var gärna så specifik som möjligt med vad du önskar för typ av tatuering.
+    </p>
+
+    <ul class="list-main">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="page2.html">Boka tid</a></li>
+        <li><a href="page3.html">Bildgalleri</a></li>
+        <li><a href="https://www.instagram.com/gaddsnirm/" target="_blank">Instagram</a></li>
+    </ul>
+
+    <div class="box">
+        <div class="input-box">
+            <span>Förnman</span>
+            <input class="input" type="text">
+        </div>
+        <div class="input-box">
+            <span>Efternman</span>
+            <input class="input" type="text">
+        </div>
+        <div class="input-box">
+            <span>E-postadress</span>
+            <input class="input" type="text">
+        </div>
+        <div class="input-box">
+            <span>Beskrivning</span>
+            <input class="input" type="text">
+        </div>
+        <div class="input-box">
+            <span>Datum</span>
+            <input class="input" type="date">
+        </div>
+        <div class="input-box">
+            <button id="btn" onclick="handleButtonClick()">Skicka förfrågan</button>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="hidden">
+
+        <h1>Räkna ut ett ungefärligt pris</h1>
+        <p>Startavgift på 1000kr</p>
+    <div class="calculator">
+        <label for="size">Ungefärlig storlek på din tatuering: </label>
+        <div class="input-box">
+            <label for="width">Bredd(cm): </label>
+            <input type="number" id="width" min="0" step="0.01">
+    
+            <label for="height">Höjd(cm): </label>
+            <input type="number" id="height" min="0" step="0.01">
+        </div>
+        <div class="input-box">
+            <button class="calc-btn" onclick="calculatePrice()">Beräkna pris</button>
+        </div>
+        <p id="result">Pris: 1000.00kr</p>
+    </div>
+
+</section>
+
+    </main>
+</body>
+</html>
